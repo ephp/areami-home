@@ -293,29 +293,36 @@ Italia</p>
 
 
 <!-- scripts -->
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
-<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
-<script type="text/javascript" src="YTPlayer/jquery.mb.YTPlayer.js"></script>
-<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="js/hours.js"></script>
-<script type="text/javascript" src="js/form-subscribe.js"></script>
-<script type="text/javascript" src="js/form-contact.js"></script>
-<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="/js/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="/YTPlayer/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="/js/jquery.nicescroll.js"></script>
+<script type="text/javascript" src="/js/hours.js"></script>
+<script type="text/javascript" src="/js/form-subscribe.js"></script>
+<script type="text/javascript" src="/js/form-contact.js"></script>
+<script type="text/javascript" src="/js/countdown.js"></script>
 <!-- countdown -->
 <script type="text/javascript">
 //<![CDATA[
-		$(document).ready(function(){
-		$("#countdown").countdown({
-			date: "1 Febrary 2014 21:00:00",
-			format: "on"
-		},
-			
-		function() {
-			// callback function
-		});
-	  });
+$(document).ready(function(){
+    var data = new Date();
+    data.setYear(2013);
+    data.setMonth(11);
+    data.setDate(22);
+    data.setHours(20);
+    data.setMinutes(0);
+    data.setSeconds(0);
+    $("#countdown").countdown({
+        date: data,
+        format: "on"
+    },
+
+    function() {
+        // callback function
+    });
+});
 //]]>
 </script>
 <!-- scripts end -->
