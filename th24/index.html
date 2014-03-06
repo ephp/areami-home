@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TH24 - Piccolo Teatro Città di Livorno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" media="all" href="../css/style.css">
+        <!-- style end -->
+
+        <!-- the grid -->
+        <link rel="stylesheet" type="text/css" media="all" href="../css/skeleton.css">
+        <link rel="stylesheet" type="text/css" media="all" href="../css/media.css">
+        <!-- the grid end -->
+    </head>
+    <body>
+        <div style="width: 50%; float: right; color: black; margin-right: 20px;">
+            <h1 style="margin-top: 10px; padding-bottom: 10px;">TH24</h1>
+            <p>
+                Il <b>Piccolo Teatro Città di Livorno</b> è lieto di invitare gli organi di stampa e televisivi per la presentazione di due eventi che si terranno nel mesi di maggio presso i  locali del Centro Artistico il Grattacielo.<br/>
+                La presentazione si terrà
+            </p>
+
+            <p style="text-align: center; font-size: 1.2em;">
+                venerdì 7 marzo alle ore 12:00<br/>
+                presso il teatro del Centro Artistico il Grattacielo<br/>
+                via del Platano, 6 - Livorno<br/>
+            </p>
+
+            <p>
+                Verrà presentato il progetto <b>TH24</b>, una 24 ore teatrale che vedrà impegnati 5 squadre nella realizzazione di uno spettacolo in 24 ore (dalla scrittura alla messa in scena)<br/>
+                Inoltre verrà presentato il weekend in memoria di <b>Giuseppe La Salvia</b>, storico direttore artistico della compagnia, che vedrà in scena attori di diverse compagnie teatrali livornesi, unite in ricordo di un amico.
+            </p>
+
+            <p>
+                Interverranno:<br/>
+                <b>Ephraim Pepe</b> (presidente del Piccolo Teatro Città di Livorno), <b>Cristiano Montalbano</b> (ideatore di TH24), <b>Luca Salemmi</b> (coordinatore weekend in memoria di Giuseppe La Salvia)
+            </p>
+
+            <p>
+                Per informazioni:<br/>
+                <a href="mailto:piccoloteatrocittadilivorno@gmail.com">piccoloteatrocittadilivorno@gmail.com</a><br/>
+                tel: 3311 115330
+            </p>
+            <h1 style="margin-top: 10px; padding-bottom: 10px;">Documenti</h1>
+            <ul style="margin: 0px;">
+                <li><a target="_blank" href="regolamento.pdf">Regolamento (PDF)</a></li>
+                <li><a target="_blank" href="iscrizione.pdf">Iscrizione (PDF)</a></li>
+                <li><a target="_blank" href="iscrizione.docx">Iscrizione (DOCX)</a></li>
+                <li><a target="_blank" href="iscrizione.odt">Iscrizione (ODT)</a></li>
+                <li><a target="_blank" href="iscrizione.rtf">Iscrizione (RTF)</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.easing.1.3.min.js"></script>
+        <script type="text/javascript" src="../js/supersized.3.2.7.min.js"></script>
+        <script type="text/javascript" src="../js/supersized.shutter.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.nicescroll.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) {
+                $.supersized({
+                    // Functionality
+                    slideshow: 1, // Slideshow on/off
+                    autoplay: 1, // Slideshow starts playing automatically
+                    start_slide: 1, // Start slide (0 is random)
+                    stop_loop: 1, // Pauses slideshow on last slide
+                    random: 0, // Randomize slide order (Ignores start slide)
+                    slide_interval: 6000, // Length between transitions
+                    transition: 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 3000, // Speed of transition
+                    new_window: 1, // Image links open in new window/tab
+                    pause_hover: 0, // Pause slideshow on hover
+                    keyboard_nav: 1, // Keyboard navigation on/off
+                    performance: 2, // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+                    image_protect: 1, // Disables image dragging and right click with Javascript
+
+                    // Size || Position						   
+                    min_width: 0, // Min width allowed (in pixels)
+                    min_height: 0, // Min height allowed (in pixels)
+                    vertical_center: 0, // Vertically center background
+                    horizontal_center: 1, // Horizontally center background
+                    fit_always: 0, // Image will never exceed browser width or height (Ignores min. dimensions)
+                    fit_portrait: 0, // Portrait images will not exceed browser height
+                    fit_landscape: 1, // Landscape images will not exceed browser width
+
+                    // Components							
+                    slide_links: 'false', // Individual links for each slide (Options: false, 'number', 'name', 'blank')
+                    thumb_links: 1, // Individual thumb links for each slide
+                    thumbnail_navigation: 0, // Thumbnail navigation
+                    slides: [// Slideshow Images
+                        {image: 'bg.jpg', title: '', thumb: '', url: ''}
+                    ]
+
+                });
+            });
+        </script>
+    </body>
+</html>
