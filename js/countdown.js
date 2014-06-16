@@ -2,7 +2,7 @@
 	$.fn.countdown = function(options, callback) {
 
 		//custom 'this' selector
-		thisEl = $(this);
+		var thisEl = $(this);
 
 		//array of custom settings
 		var settings = { 

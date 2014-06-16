@@ -341,13 +341,13 @@ p a:hover {
     padding: 0;
 }
 
-ul#countdown li {
+ul.countdown li {
     display: inline-block;
     width: 80px;
     text-align: left;
 }
 
-ul#countdown li span {
+ul.countdown li span {
     font-family: 'TrumpGothicEastBold';
     font-size: 40px;
     font-style: normal;
@@ -360,17 +360,17 @@ ul#countdown li span {
     position: relative;
 }
 
-ul#countdown li span::before {
+ul.countdown li span::before {
     content: '';
     width: 100%;
     height: 1px;
     position: absolute;
 }
 
-ul#countdown li p.timeRefDays,
-ul#countdown li p.timeRefHours,
-ul#countdown li p.timeRefMinutes,
-ul#countdown li p.timeRefSeconds {
+ul.countdown li p.timeRefDays,
+ul.countdown li p.timeRefHours,
+ul.countdown li p.timeRefMinutes,
+ul.countdown li p.timeRefSeconds {
     font-family: 'TrumpGothicEastBold';
     color: #999;
     text-transform: uppercase;
@@ -379,7 +379,7 @@ ul#countdown li p.timeRefSeconds {
     padding: 0 0 5px 0;
 }
 
-ul#countdown li p.timeRefSeconds {
+ul.countdown li p.timeRefSeconds {
     color: #fff;
 }
 
