@@ -33,10 +33,7 @@ jQuery(function($) {
             slide_links				:	'false', // Individual links for each slide (Options: false, 'number', 'name', 'blank')
             thumb_links				:	1, // Individual thumb links for each slide
             thumbnail_navigation    :   0, // Thumbnail navigation
-            slides 					:  	[			// Slideshow Images
-            {image : 'untitled/img/bg-montevaso.jpg', title : 'Untitled Event', thumb : '', url : ''},
-            {image : 'love-letters/img/bg-11-07.jpg', title : 'Love Letters', thumb : '', url : ''}
-            ]
+            slides 					:  	slides
 
 });
 });

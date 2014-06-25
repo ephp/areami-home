@@ -6,23 +6,13 @@
     <head>
         <meta charset="utf-8">
         <title>Area[mi]</title>
-
         <meta name="description" content="Formazione, Teatro, Spettacoli e Organizzazione di Eventi su Firenze e Livorno">
         <meta name="author" content="Ephraim Pepe - Dodosoft">
-
         <meta name="keywords" content="Formazione, Teatro, Eventi">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <!-- Hours v1.0 || ex nihilo || November 2013 -->
-
-        <!-- style -->
         <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-        <!-- style end -->
-
-        <!-- the grid -->
         <link rel="stylesheet" type="text/css" media="all" href="css/skeleton.css">
         <link rel="stylesheet" type="text/css" media="all" href="css/media.css">
-        <!-- the grid end -->
 
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,6 +28,11 @@
                 <li><a href="https://www.facebook.com/areami.net" target="_blank"><img src="images/social/facebook.png" alt="Facebook"></a></li>
                 <li><a href="https://plus.google.com/u/1/108370178958233257425/posts" target="_blank"><img src="images/social/googleplus.png" alt="GooglePlus"></a></li>
                 <!-- <li><a href="#" target="_blank"><img src="images/social/linkedin.png" alt="LinkedIn"></a></li> -->
+                <li class="pipe"><a href="index.html">Home</a></li>
+                <li class="pipe"><a href="areami.html">Cos'è Area[mi]</a></li>
+                <li class="pipe"><a href="untitled.html">Untitled Event</a></li>
+                <li class="pipe"><a href="love.html">Love Letters</a></li>
+                <li class="pipe"><a class="menu" href="#section3">Contatti</a></li>
             </ul>
         </div>
 
@@ -49,11 +44,11 @@
             <div class="hours-wrapper">
                 <div class="intro">
                     <div class="introduction">
-                        <div id="intro-author">Formazione, Teatro, Organizzazione di eventi</div>
                         <!-- title 
                         <div id="intro-title">Area[mi]</div>
                         -->
                         <div id="intro-title-img" title="Area[Mi] La maieutica quindi non è l'arte di insegnare ma l'arte di aiutare. La verità non è insegnabile perché è un sapere dell'anima; perciò Socrate non inculcava nei suoi discepoli le sue idee, ma li aiutava a partorire le loro verità"></div>
+                        <div id="intro-author">Area[mi]: Formazione, Teatro, Organizzazione di eventi</div>
                         <!-- title end -->
 
                         <!-- countdown -->
@@ -61,6 +56,8 @@
                             <div id="countdown-wrap">
                                 <ul class="countdown" style="display: none;" id="countdown-1"><li><span class="days">00</span><p class="timeRefDays">giorni</p></li><li><span class="hours">00</span><p class="timeRefHours">ore</p></li><li><span class="minutes">00</span><p class="timeRefMinutes">minuti</p></li><li><span class="seconds">00</span><p class="timeRefSeconds">secondi</p></li></ul>
                                 <ul class="countdown" style="display: none;" id="countdown-2"><li><span class="days">00</span><p class="timeRefDays">giorni</p></li><li><span class="hours">00</span><p class="timeRefHours">ore</p></li><li><span class="minutes">00</span><p class="timeRefMinutes">minuti</p></li><li><span class="seconds">00</span><p class="timeRefSeconds">secondi</p></li></ul>
+                                <ul class="countdown" style="display: none;" id="countdown-3"><li><span class="days">00</span><p class="timeRefDays">giorni</p></li><li><span class="hours">00</span><p class="timeRefHours">ore</p></li><li><span class="minutes">00</span><p class="timeRefMinutes">minuti</p></li><li><span class="seconds">00</span><p class="timeRefSeconds">secondi</p></li></ul>
+                                <ul class="countdown" style="display: none;" id="countdown-4"><li><span class="days">00</span><p class="timeRefDays">giorni</p></li><li><span class="hours">00</span><p class="timeRefHours">ore</p></li><li><span class="minutes">00</span><p class="timeRefMinutes">minuti</p></li><li><span class="seconds">00</span><p class="timeRefSeconds">secondi</p></li></ul>
                             </div>
                         </div>
                         <!-- countdown end -->
@@ -128,18 +125,6 @@
                 </div>
             </div>
         </div>
-        <div class="menu-mobile">
-            <ul>
-                <li>
-                    <ul>
-                        <li class="lifting"><a class="menu" href="#section1">Cos'è Area[mi]</a></li>
-                        <li class="lifting"><a class="menu" href="#section2">Untitled Event</a></li>
-                        <li class="lifting-first"><a class="menu" href="#section3">Contatti</a></li>
-                    </ul>
-                    <a class="menu-trigger" href="#">Menu</a>
-                </li>
-            </ul>
-        </div>
         <div id="top-panel-container">
             <div id="top-panel">
                 <div id="panel">
@@ -161,6 +146,15 @@
                 <div class="panel-button" id="close-button"><a href="#">Chiudi</a></div>
             </div>
         </div>
+        <script type="text/javascript">
+            // Slideshow Images
+            var slides = [
+                {image: 'untitled/img/bg-montevaso.jpg', title: 'Untitled Event', thumb: '', url: ''},
+                {image: 'love-letters/img/bg-01-08.jpg', title: 'Love Letters', thumb: '', url: ''},
+                {image: 'love-letters/img/bg-06-08.jpg', title: 'Love Letters', thumb: '', url: ''},
+                {image: 'love-letters/img/bg-24-08.jpg', title: 'Love Letters', thumb: '', url: ''}
+            ]
+        </script>
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
         <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
@@ -174,21 +168,6 @@
         <script type="text/javascript">
             //<![CDATA[
             $(document).ready(function() {
-                var data2 = new Date();
-                data2.setYear(2014);
-                data2.setMonth(6);
-                data2.setDate(11);
-                data2.setHours(21);
-                data2.setMinutes(15);
-                data2.setSeconds(0);
-                $("#countdown-2").countdown({
-                    date: data2,
-                    format: "on"
-                },
-                function() {
-                    // callback function
-                });
-
                 var data1 = new Date();
                 data1.setYear(2014);
                 data1.setMonth(5);
@@ -203,17 +182,59 @@
                 function() {
                     // callback function
                 });
+                var data2 = new Date();
+                data2.setYear(2014);
+                data2.setMonth(7);
+                data2.setDate(1);
+                data2.setHours(21);
+                data2.setMinutes(30);
+                data2.setSeconds(0);
+                $("#countdown-2").countdown({
+                    date: data2,
+                    format: "on"
+                },
+                function() {
+                    // callback function
+                });
+                var data3 = new Date();
+                data3.setYear(2014);
+                data3.setMonth(7);
+                data3.setDate(6);
+                data3.setHours(21);
+                data3.setMinutes(30);
+                data3.setSeconds(0);
+                $("#countdown-3").countdown({
+                    date: data3,
+                    format: "on"
+                },
+                function() {
+                    // callback function
+                });
+                var data4 = new Date();
+                data4.setYear(2014);
+                data4.setMonth(7);
+                data4.setDate(24);
+                data4.setHours(21);
+                data4.setMinutes(0);
+                data4.setSeconds(0);
+                $("#countdown-4").countdown({
+                    date: data4,
+                    format: "on"
+                },
+                function() {
+                    // callback function
+                });
             });
             //]]>
             var i = 1;
             var time = 9000;
-            $('#countdown-'+i).show();
-            setInterval(function(){
+            $('#countdown-' + i).show();
+            setInterval(function() {
                 i++;
-                if(i > 2) {
+                if (i > 5) {
                     i = 1;
                 }
-                showHideCountdown($('#countdown-'+i));
+                showHideCountdown($('#countdown-' + i));
             }, time);
         </script>
     </body>
