@@ -110,32 +110,10 @@
         <script type="text/javascript">
             //<![CDATA[
             $(document).ready(function() {
-                var data1 = new Date();
-                data1.setYear(2014);
-                data1.setMonth(5);
-                data1.setDate(27);
-                data1.setHours(10);
-                data1.setMinutes(30);
-                data1.setSeconds(0);
-                $("#countdown-1").countdown({
-                    date: data1,
-                    format: "on"
-                },
-                function() {
-                    // callback function
-                });
+               if(isMobile.any()) {
+                   window.location = 'http://www.youtube.com/watch?v=lSr7UmItz5Q';
+               } 
             });
-            //]]>
-            var i = 1;
-            var time = 9000;
-            $('#countdown-' + i).show();
-            setInterval(function() {
-                i++;
-                if (i > 1) {
-                    i = 1;
-                }
-                showHideCountdown($('#countdown-' + i));
-            }, time);
         </script>
     </body>
 </html>
